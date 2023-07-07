@@ -13,8 +13,9 @@ spec:
     spec:
       containers:
       - image: acrdemo25.azurecr.io/avanichyazuresqlbuilddocker:latest 
-        imagePullPolicy: IfNotPresent
         name: myapp
         ports:
         - containerPort: 80
           name: myapp
+    imagePullSecrets:
+    - name: acrdemo25
