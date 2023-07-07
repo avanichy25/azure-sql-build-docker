@@ -66,6 +66,6 @@ stages:
         kubernetesServiceConnection: 'kubernetes'
         namespace: 'default'
         manifests: |
-           $(Build.SourcesDirectory)/sqlapp/Manifests/app.yml
-           $(Build.SourcesDirectory)/sqlapp/Manifests/service.yml
+           $(Build.SourcesDirectory)/Manifests/app.yml
+           $(Build.SourcesDirectory)/Manifests/service.yml
            
