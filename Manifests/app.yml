@@ -17,5 +17,5 @@ spec:
         ports:
         - containerPort: 80
           name: myapp
-    imagePullSecrets:
-    - name: acrdemo25
+      imagePullSecrets:
+      - name: acrdemo25
