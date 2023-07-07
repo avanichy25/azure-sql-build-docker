@@ -58,3 +58,14 @@ stages:
         tags: |
           $(tag)
           latest
+    
+    - task: KubernetesManifest@1
+      inputs:
+        action: 'deploy'
+        connectionType: 'kubernetesServiceConnection'
+        kubernetesServiceConnection: 'kubernetes'
+        namespace: 'default'
+        manifests: |
+           $(Build.SourcesDirectory)/sqlapp/Manifests/app.yml
+           $(Build.SourcesDirectory)/sqlapp/Manifests/service.yml
+           
