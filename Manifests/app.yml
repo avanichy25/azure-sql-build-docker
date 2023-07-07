@@ -12,7 +12,7 @@ spec:
         app: myapp
     spec:
       containers:
-      - image: acrdemo25.azurecr.io/avanichyazuresqlbuilddocker:87
+      - image: acrdemo25.azurecr.io/avanichyazuresqlbuilddocker:latest
         name: myapp
         ports:
         - containerPort: 80
